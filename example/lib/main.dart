@@ -35,7 +35,7 @@ class _ExampleAppState extends State<ExampleApp> {
   }
 
   void initPorts() {
-    setState(() => availablePorts = SerialPort.availablePorts);
+    setState(() async => availablePorts = await SerialPort.availablePorts);
   }
 
   @override
